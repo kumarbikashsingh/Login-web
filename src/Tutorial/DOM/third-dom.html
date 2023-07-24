@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        const table = document.getElementById("table");
+        const tableAttribures = table.attributes;//Node element interface.
+        for (let i = 0; i < tableAttribures.length; i++) {
+            if (tableAttribures.nodeName.toLowerCase() === border) {
+                table.border = "1";
+            }
+        }
+        table.summary = "Node: increased border";
+    </script>
+</head>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Formate </title>
+    <link rel="stylesheet" href="show-table.css">
+</head>
+
+<body>
+    <div class="search1">
+        <input type="text" id="abs" name="abs" placeholder="search"">
+        <button type=" button" onclick="serchUserByName()">Search
+        Element</button>
+    </div>
+    <div>
+        <table id="userlist">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Mobile Number</th>
+                </tr>
+            </thead>
+            <tbody id="matchData"></tbody>
+            <!-- <input type="button" onclick="helloUser()" value="Insert" /> -->
+        </table>
+    </div>
+
+    <script src="show-table.js" />
+</body>
+
+
+</html>

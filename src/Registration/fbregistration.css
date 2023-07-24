@@ -1,0 +1,131 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.head-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(9, 47, 238, 0.644);
+    height: 80px;
+}
+.tag-container{
+    color: white;
+    text-align: center;
+    justify-content: left;
+    width: 50%;
+}
+.login-container{
+    color: white;
+}
+.form-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.name-container{
+    width: 100%;
+    margin-left:0%;
+}
+.password-container{
+    width: 100%;
+    margin-top: 2.5%;
+}
+.button-container{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 2.5%;
+    border: none;
+}
+.forgot{
+    color: white;
+}
+
+
+/* Images and form in second line */
+.mainstyle-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(158, 160, 182, 0.225);
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 20px;
+    width: 50%;
+    background-position: center;
+    margin-left: 10%;
+}
+.registerform-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.submitform-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.firstname{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    width: 40%;
+    height: 4em;
+    padding: 0%;
+    border: 30px;
+    margin-right: 4%;
+}
+.lname-box{
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+    width: 40%;
+    height: 4em;
+    padding: 0%;
+    border: 30px;
+}
+.mobile-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 84%;
+    height:4em;
+    padding: 0%
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 84%;
+    /* height:2.5em; */
+    padding: 0%;
+}
+.birthday{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 30%;
+}
+button{
+    display: block;
+    width: 30%;
+    justify-items: center;
+    min-height: 40px;
+    margin-top: 40px;
+    background-color: rgba(37, 158, 37, 0.823);
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 1em;
+    cursor:pointer;
+    box-shadow: 0 0 5px #ffffff;
+}

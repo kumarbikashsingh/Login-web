@@ -35,6 +35,8 @@ function displayBy() {
         can.style.display = "none";
         //block
     }
+    else{
     let blo = document.getElementById("blocku");
     blo.style.display = "block";
+    }
 }

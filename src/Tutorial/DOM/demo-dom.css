@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    width: 30%;
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+button{
+    width: 200px;
+}

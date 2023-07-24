@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="fbregistration.css">
+
+<head>
+    <title>Fb-Registration</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- 1st Sibling -->
+        <div class="head-container">
+
+            <!--1st child Sibling -->
+            <div class="tag-container">
+                <h1>facebook</h1>
+            </div>
+
+            <!-- 2nd child sibling -->
+            <div class="login-container">
+                <div class="form-main">
+                    <!-- <form action=""> -->
+                    <div class="name-container">
+                        <label for="username">Email or Phone</label><br>
+                        <input type="text" id="logusername" name="logusername" style="height: 1.5em;"
+                            onclick="userLogin()">
+                        <span id="loginError"></span>
+                    </div>
+
+                    <div class="password-container">
+                        <label for="password">Password</label>
+                        <input type="text" id="logpassword" name="logpassword" style="height: 1.5em;">
+                        <span id="errorLoginPwd"></span>
+                        <a href="/Login.html" class="forgot"> forgotten account?</a>
+                    </div>
+                    <div class="button-container">
+                        <input type="button" id="login" value="login" style="height: 2em;"
+                            onclick="userLogin(), userLogin()" />
+                    </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd Sibling -->
+    <div class="mainstyle-container" id="registration">
+
+        <!--1st child Sibling -->
+        <div class="image-container">
+            <h2>
+                Facebook helps you connect and share with the <br>
+                peaple in your life.
+            </h2>
+            <div>
+                <img src="fbimage.jpg" alt="It is not loading">
+            </div>
+        </div>
+
+        <!-- 2nd child sibling -->
+        <div class="registerform-container">
+            <div>
+                <h1>Create an account?</h1>
+                <p>It's quick and easy</p>
+            </div>
+
+            <div class="submitform-container">
+                <div>
+                    <!-- <form> -->
+                    <div class="form-group">
+                        <div class="firstname">
+                            <input type="text" id="regFirst" name="regLastName" placeholder="First Name"
+                                style="height: 2.5em;" onchange="registrationFn()" />
+                            <span id="firstName"></span>
+                        </div>
+                        <div class="lname-box">
+                            <input type="text" id="regLast" name="regLastName" placeholder="Last Name"
+                                style="height: 2.5em;" onchange="registrationLn()" />
+                            <span id="lastName"></span>
+                        </div>
+                    </div>
+
+                    <div class="mobile-container">
+                        <input type="text" id="regMobileOrEmail" name="mobile-and-email"
+                            placeholder="Mobile Number or Email Address" style="height: 2.5em;" onchange="mobileReg()">
+                        <span id="error"></span>
+                    </div>
+
+                    <div class="password">
+                        <input type="text" id="new-password" name="new-password" placeholder="NEW PASSWORD"
+                            style="height: 2.5em;" onchange="userPassword()">
+                        <span id="wrongPwd"></span>
+                    </div>
+                    <div class="birthday">
+                        <h3 style="color: gray;">Birthday</h3>
+                        <input type="date" id="regBirth" name="birth" placeholder="dd-mm-yy" style="height: 2.5em;">
+                    </div>
+
+                    <div class="gender-container">
+                        <h3 style="color: gray;">Gender</h3>
+                        <input type="radio" id="regMale" name="fav_language" value="Male">
+                        <label for="male"><b>Male</b></label>
+
+                        <input type="radio" id="regFemale" name="fav_language" value="Female">
+                        <label for="female"><b>Female</b></label>
+
+                        <input type="radio" id="regCustoma" name="fav_language" value="Customa">
+                        <label for="customa"><b>Customa</b></label>
+                    </div>
+
+                    <p style="color: gray;"> By clicking Sign Up, You agree to our Terms,Data Policy and <br>
+                        Cookie Policy.You may Required SMS notification from us <br>
+                        and can opt Out at any time.
+                    </p>
+                    <button type="button" id="registration" value="submit" onclick="registrationFn(), 
+                        registrationLn(),
+                        mobileReg(),
+                        userPassword()">Submit</button>
+
+                    <p><b>Create a Page for a celebrity, brand or business.</b></p>
+                    <!-- </form> -->
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <script src="fbregistration.js"></script>
+
+</body>
+
+</html>
